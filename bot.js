@@ -1,6 +1,27 @@
 const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 
+// INICIALIZA O BOT
+const client = new Client({
+  authStrategy: new LocalAuth(),
+  puppeteer: {
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  }
+});
+
+// GERA O QR CODE
+client.on('qr', qr => {
+  console.log('ESCANEIE O QR CODE ABAIXO:');
+  qrcode.generate(qr, { small: false });
+});
+
+// QUANDO CONECTAR
+client.on('ready', () => {
+  console.log('BOT CONECTADO 🚀');
+});
+
+client.initialize();
+
 const PIX_KEY = 'SUA_CHAVE_PIX_AQUI';
 
 const produtos = {
