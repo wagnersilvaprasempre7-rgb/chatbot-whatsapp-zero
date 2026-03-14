@@ -1,12 +1,13 @@
 {
-  "name": "borboleta-azul-turismo-bot",
+  "name": "chatbot-whatsapp-zero",
   "version": "1.0.0",
-  "main": "bot-turismo.js",
+  "description": "Bot WhatsApp loja automática",
+  "main": "bot.js",
   "scripts": {
-    "start": "node bot-turismo.js"
+    "start": "node bot.js"
   },
   "dependencies": {
-    "whatsapp-web.js": "^1.34.1",
-    "qrcode-terminal": "^0.12.0"
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.34.1"
   }
 }
