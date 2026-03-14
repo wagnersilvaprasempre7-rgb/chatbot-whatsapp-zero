@@ -1,13 +1,12 @@
 {
   "name": "borboleta-azul-turismo-bot",
   "version": "1.0.0",
-  "description": "Bot turístico Borboleta Azul para WhatsApp",
-  "main": "bot.js",
+  "main": "bot-turismo.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node bot-turismo.js"
   },
   "dependencies": {
-    "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^1.34.1"
+    "whatsapp-web.js": "^1.34.1",
+    "qrcode-terminal": "^0.12.0"
   }
 }
