@@ -1,7 +1,7 @@
 {
   "name": "chatbot-whatsapp-zero",
   "version": "1.0.0",
-  "description": "Bot WhatsApp com catálogo e carrinho",
+  "description": "Bot WhatsApp loja automática",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
